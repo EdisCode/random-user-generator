@@ -115,7 +115,7 @@ img {
   color: lightslategray;
 }
 
-/* pagination */
+/* Pagination */
 .center {
   text-align: center;
 }
@@ -149,4 +149,23 @@ img {
 
 .pagination button:disabled {
   background-color: grey;
+}
+
+/* Page Not Found */
+.page-not-found h1 {
+  font-size: clamp(5rem, 40vmin, 20rem);
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1rem;
+  text-shadow: 10px 10px 5px grey;
+  color: steelblue;
+}
+
+.page-not-found h2 {
+  font-weight: 500;
+  color: grey;
+}
+
+.page-not-found p {
+  font-weight: 100;
+  color: grey;
 }

@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from "react";
-import { NavLink } from "react-router-dom";
 import axios from "axios";
+import Nav from "./NavLink";
 
 function Users() {
   const [userData, setUserData] = useState([]);
@@ -67,20 +67,7 @@ function Users() {
 
   return (
     <section className="users-container">
-      <div className="nav-container">
-        <NavLink className="link" to="/">
-          Home
-        </NavLink>
-        <NavLink
-          style={({ isActive }) =>
-            isActive ? { color: "steelblue" } : { color: "grey" }
-          }
-          className="link"
-          to="/users"
-        >
-          Users
-        </NavLink>
-      </div>
+      <Nav />
       <button className="getBtn" id="getUsers" onClick={onClickHandler}>
         {activeUser ? "Get Another 5 Users" : "Get 5 Users"}
       </button>
