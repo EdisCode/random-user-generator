@@ -6,8 +6,8 @@ function AppRoute() {
   return (
     <>
       <Routes>
-        <Route index element={<Home />} />
-        <Route path="/users" element={<Users />} />
+        <Route exact index element={<Home />} />
+        <Route exact path="/users" element={<Users />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </>
