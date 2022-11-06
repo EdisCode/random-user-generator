@@ -28,15 +28,14 @@ function Users() {
         setEachUser(response.data.results[page]);
         setUserData([eachUser]);
       })
-      .catch((error) => {
-        console.log(error);
-        handleError(error);
-
-        setLoading(true);
-      })
       .finally(() => {
         setLoading(false);
         setActiveUser(true);
+      })
+      .catch((error) => {
+        handleError(error);
+        console.log(error);
+        setLoading(true);
       });
   };
 
@@ -85,7 +84,7 @@ function Users() {
               return (
                 <div className="list" key={index}>
                   <Fragment>
-                    <img src={user.picture.large} alt="user Picture" />
+                    <img src={user.picture.large} alt="userPicture" />
                     <PhraseGenerator user={user} />
                     <div className="app-icons">
                       {icons.map((icon, index) => {

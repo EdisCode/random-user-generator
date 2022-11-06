@@ -7,7 +7,6 @@ function FallBack({ error, resetErrorBoundary }) {
       <h1>OOPS!!!</h1>
       <div>
         <p>{error.message}</p>
-
         <Button
           backgroundColor="steelblue"
           color="white"

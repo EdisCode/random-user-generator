@@ -43,5 +43,5 @@
   "devDependencies": {
     "gh-pages": "^4.0.0"
   },
-  "homepage": "https://ediscode.github.io/random-user-generator"
+  "homepage": "https://ediscode.github.io/random-user-generator/"
 }
