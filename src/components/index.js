@@ -1,3 +1,2 @@
-export { default as Home } from "./Home";
-export { default as Users } from "./Users";
-export { default as PageNotFound } from "./PageNotFound";
+export { default as Nav } from "./Nav";
+export { default as Button } from "./Button";

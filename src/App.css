@@ -36,10 +36,6 @@ body {
 
 .link {
   text-decoration: none;
-  color: grey;
-  display: block;
-  font-size: 1.3em;
-  font-size: 1em;
   padding: .1em 2em;
 }
 
@@ -168,4 +164,19 @@ img {
 .page-not-found p {
   font-weight: 100;
   color: grey;
+}
+
+/* Button */
+.button {
+  padding: 1.5em;
+  margin: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 1em;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  box-shadow: 0 0 3px 2px var(--grey);
 }
